@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài liệu VASP - Quy định tài sản mã hóa Việt Nam</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel Standalone -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <!-- Import component từ file riêng -->
+    <script type="text/babel" src="VASPComponent.js"></script>
+    
+    <!-- Render component -->
+    <script type="text/babel">
+        const { StrictMode } = React;
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(
+            <StrictMode>
+                <VASPComprehensiveDoc />
+            </StrictMode>
+        );
+    </script>
+</body>
+</html>
